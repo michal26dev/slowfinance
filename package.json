@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/michal26dev/slowfinance/issues"
   },
-  "homepage": "https://github.com/michal26dev/slowfinance#readme"
+  "homepage": "https://github.com/michal26dev/slowfinance#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
