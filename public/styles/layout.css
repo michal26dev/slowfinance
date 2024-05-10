@@ -12,9 +12,9 @@
  }
 
  /* Move few menu items to the right */
- .container_menu>nth:-child(2) {
-     margin-left: auto;
- }
+ .container_menu> :nth-child(2){
+    margin-right: auto;
+}
 
  /* Body */
  .container_menu>a {
@@ -39,7 +39,9 @@
  }
 
  .content_options_actions_flex_container {
-     display: flex
+     display: flex;
+     padding-bottom: 50px;
+     justify-content: space-around;
  }
 
  /* Footer */
