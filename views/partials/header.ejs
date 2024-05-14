@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/layout.css"/>
-
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>SlowFinance</title>
 </head>
 
 <body>
+
     <header>
 
+        <!-- Menu for small devices -->
+        <div class="hamburger-menu">
+            <div class="hamburger-button">☰</div>
+            <nav class="hamburger-menu-items" style="display:none">
+                <a href="#">Home page</a>
+                <a href="#">Add new expense</a>
+                <a href="#">Expense List</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+         <!-- Menu for large Devices -->
         <div class="container_menu">
+            <a href="#">Logo</a>
             <a href="#">Home</a>
             <a href="#"></a>
             <a href="#">Add expense</a>
             <a href="#">Expense List</a>
+            <a href="#">Extra option</a>
         </div>
     </header>
 
-    <!-- todo: rename div to main -->
     <main class="container_content">
