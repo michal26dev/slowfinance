@@ -26,9 +26,25 @@
     <div class="footer_powered_by">
         <p>© 2024 Powered by Michal K. All rights reserved.</p>
     </div>
-
 </footer>
 
 </body>
 
 </html>
+
+<script>
+    jQuery(function ($) {
+        // - menu actions
+        // Hide menu once user click anywhere outside menu.
+        $(".container_content").click(function () {
+            if($(".hamburger-menu-items").is(":visible")){
+                $(".hamburger-menu-items").slideUp();
+            }
+        });
+
+        // Show / Hide menu on hamburger click
+        $(".hamburger-button").click(function () {
+            $(".hamburger-menu-items").slideToggle();
+        });
+    });
+</script>

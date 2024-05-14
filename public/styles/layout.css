@@ -1,67 +1,100 @@
- * {
+ /* All devices */
+ html {
+     /* 16px = 1rem (base). For all devices. */
+     font-size: 16px;
+
+     /* margins for whole site for all devices */
      margin-left: 5px;
      margin-right: 5px;
  }
 
- /* Headers */
+ /* Mobile Devices */
+ @media only screen and (max-width: 1200px) {
 
- /* menu */
- .container_menu {
-     display: flex;
-     border: solid 1px black;
+     /* Hide big menu on small devices. */
+     .container_menu {
+         display: none !important;
+     }
+
+     /* Display hamburger menu as columns */
+     .hamburger-menu-items {
+         font-size: 2.3rem;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .hamburger-button {
+         font-size: 3rem;
+     }
  }
 
- /* Move few menu items to the right */
- .container_menu> :nth-child(2){
-    margin-right: auto;
-}
+ /* Larger devices */
+ @media only screen and (min-width: 1200px) {
 
- /* Body */
- .container_menu>a {
-     padding: 10px;
- }
+     /* hide hamburger menu on large devices */
+     .hamburger-menu {
+         display: none !important;
+     }
 
- .container_content>h1,
- p {
-     padding-left: 15px;
-     padding-right: 15px;
-     margin-top: 50px;
- }
 
- /* Headings */
- .container_content>h2,
- h3 {
-     text-align: center;
- }
+     /* menu */
+     .container_menu {
+         display: flex;
+     }
 
- .container_introduction {
-     margin-top: 100px;
- }
+     /* Keep specific menu items at right */
+     .container_menu> :nth-child(2) {
+         margin-right: auto;
+     }
 
- .content_options_actions_flex_container {
-     display: flex;
-     padding-bottom: 50px;
-     justify-content: space-around;
- }
+     .container_menu>a {
+         padding: 10px;
+     }
 
- /* Footer */
+     /* Headings */
+     .container_content>h2,
+     h3 {
+         text-align: center;
+     }
 
- footer {
-     padding-top: 100px;
- }
+     /* general page margins  */
+     .container_content>h1,
+     p {
+         padding-left: 15px;
+         padding-right: 15px;
+         margin-top: 50px;
+     }
 
- .footer_quote_line {
-     padding-bottom: 100px;
- }
+     .container_introduction {
+         margin-top: 100px;
+     }
 
- .footer_grid {
-     display: flex;
-     justify-content: space-around;
-     padding-bottom: 15px;
-     padding-top: 35px;
- }
+     .content_options_actions_flex_container {
+         display: flex;
+         padding-bottom: 50px;
+         justify-content: space-around;
+     }
 
- .footer_powered_by {
-    display: flex;
-    justify-content: center;
+     /* Footer */
+
+     footer {
+         padding-top: 100px;
+     }
+
+     .footer_quote_line {
+         padding-bottom: 100px;
+     }
+
+     .footer_grid {
+         display: flex;
+         justify-content: space-around;
+         padding-bottom: 15px;
+         padding-top: 35px;
+     }
+
+     .footer_powered_by {
+         display: flex;
+         justify-content: center;
+     }
  }
